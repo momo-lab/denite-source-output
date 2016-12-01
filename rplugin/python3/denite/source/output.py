@@ -5,7 +5,6 @@
 # ============================================================================
 
 from .base import Base
-import os
 import re
 
 class Source(Base):
