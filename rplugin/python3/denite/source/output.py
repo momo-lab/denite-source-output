@@ -17,6 +17,9 @@ class Source(Base):
 
     def on_init(self, context):
         command = ' '.join(context['args'])
+        if not command:
+            command = self.vim.call('input',
+                    'Please input Vim command: ', context['input'])
         context['__command'] = command
 
     def gather_candidates(self, context):
