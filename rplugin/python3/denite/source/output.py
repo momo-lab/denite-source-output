@@ -1,6 +1,8 @@
+# ============================================================================
 # FILE: output.py
 # AUTHOR: momotaro <momotaro.n@gmail.com>
 # License: MIT license
+# ============================================================================
 
 from .base import Base
 import os
